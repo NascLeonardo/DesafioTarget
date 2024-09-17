@@ -36,8 +36,8 @@ class Program
         // Total de dias acima da média
         int daysAboveMed = profits.Count(x => x.total > medProfit);
 
-        Console.WriteLine("O menor valor de faturamento ocorrido em um dia do ano foi -> R$" + lesserValue.total + ", no dia ->" + lesserValue.date.ToShortDateString());
-        Console.WriteLine("O maior valor de faturamento ocorrido em um dia do ano foi -> R$" + greaterValue.total + " no dia ->" + greaterValue.date.ToShortDateString());
+        Console.WriteLine("O menor valor de faturamento ocorrido em um dia do ano foi -> R$" + lesserValue.total + " no dia -> " + lesserValue.date.ToShortDateString());
+        Console.WriteLine("O maior valor de faturamento ocorrido em um dia do ano foi -> R$" + greaterValue.total + " no dia -> " + greaterValue.date.ToShortDateString());
         Console.WriteLine("Número de dias no ano em que o valor de faturamento diário foi superior à média anual: " + daysAboveMed + " superando o valor de -> R$" + medProfit);
         
     }
